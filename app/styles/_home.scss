@@ -9,17 +9,30 @@
     background-image: url('../images/home_1.jpg');
     padding: 135px 0;
     background-repeat: no-repeat;
+    @media (max-width: $screen-xs-max){
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+      min-height: 300px;
+    }
     p {
       color: #fff;
       font-size: 25px;
       font-family: 'SegoeUI';
       font-weight: 600;
+      @media (max-width: $screen-xs-max){
+        font-size: 18px;
+      }
     }
     h2 {
       color: #fff;
       font-size: 30px;
       font-family: 'SegoeUI';
       font-weight: 700;
+      @media (max-width: $screen-xs-max){
+        font-size: 22px;
+      }
     }
     span {
       color: #fff;
@@ -27,6 +40,9 @@
       font-family: 'SegoeUI';
       font-weight: 700;
       font-style: italic;
+      @media (max-width: $screen-xs-max){
+        font-size: 18px;
+      }
     }
   }
   &__side{
@@ -66,7 +82,9 @@
   }
   &__wrap {
     padding-top: 35px;
-    padding-bottom: 35px;
+    @media (max-width: $screen-xs-max) {
+      padding-top: 20px;
+    }
     &--leftbar {
       @media (max-width: $screen-sm-max) {
         margin-top: 15px;
@@ -182,12 +200,26 @@
           float: none !important;
           display: block;
           margin: 0 auto !important;
+          padding: 0 !important;
         }
       }
       p {
         @media (max-width: $screen-xs-max) {
-          padding-left: 0;
+          padding: 0;
           text-align: center;
+        }
+      }
+      h4{
+        @media (max-width: $screen-xs-max){
+          padding-top: 0;
+        }
+      }
+      .pdtop{
+        margin-top: 10px;
+      }
+      .title__headline{
+        @media (max-width: $screen-xs-max){
+          margin: 0 !important;
         }
       }
     }
