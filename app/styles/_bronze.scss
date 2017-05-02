@@ -1,0 +1,117 @@
+.main__content {
+  .btnwrap {
+    text-align: right;
+  }
+
+  .-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    border: none;
+    background-color: #00b7eb;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    border: 2px transparent solid;
+    transition: all 0.3s;
+    @media (max-width: $screen-sm-max) {
+      float: none;
+      display: block;
+      margin: 25px auto 0;
+      margin-bottom: 20px;
+    }
+
+    &:hover {
+      border: 2px #00b7eb solid;
+      background-color: transparent;
+      color: #00b7eb;
+    }
+  }
+
+  span {
+    float: right;
+    padding-top: 10px;
+    color: #323232;
+
+    .fa-calendar {
+      margin-right: 10px;
+      color: #323232;
+    }
+  }
+
+  .nav-links{
+    text-align: right;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    @media (max-width: $screen-xs-max){
+      text-align: center;
+    }
+    .page-numbers{
+      font-size: 18px;
+      color: #000;
+      background-color: transparent;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      text-align: center;
+      border: 1px #E8E9E9 solid;
+      line-height: 27px;
+      text-decoration: none;
+      font-weight: 400;
+      &:hover{
+        background: #BBBBBB;
+        color: #E9E9E9;
+      }
+    }
+    .current{
+      background-color: #53C1BC;
+      color: #fff;
+    }
+    .dots{
+      background-color: transparent;
+      border: none;
+      &:hover{
+        background: none;
+        color: #000;
+      }
+    }
+    .-prev{
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      line-height: 27px;
+      padding: 0;
+      margin: 0;
+      border: 1px #E8E9E9 solid;
+      color: #E8E9E9;
+      background-color: transparent;
+      &:hover{
+        background: #BBBBBB;
+        color: #E9E9E9;
+      }
+    }
+    .-next{
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      line-height: 27px;
+      padding: 0;
+      margin: 0;
+      border: 1px #E8E9E9 solid;
+      color: #E8E9E9;
+      background-color: transparent;
+      &:hover{
+        background: #BBBBBB;
+        color: #E9E9E9;
+      }
+    }  
+  }
+}
+.content{
+  &__station{
+    border-bottom: 2px #CECFD3 solid;
+  }
+}

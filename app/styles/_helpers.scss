@@ -1,0 +1,302 @@
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUIBold/SegoeUIBold.eot'),
+  url('../fonts/SegoeUIBold/SegoeUIBold.woff') format('woff'),
+  url('../fonts/SegoeUIBold/SegoeUIBold.ttf') format('truetype'),
+  url('../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUIItalic/SegoeUIItalic.eot'),
+  url('../fonts/SegoeUIItalic/SegoeUIItalic.woff') format('woff'),
+  url('../fonts/SegoeUIItalic/SegoeUIItalic.ttf') format('truetype'),
+  url('../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUILight/SegoeUILight.eot'),
+  url('../fonts/SegoeUILight/SegoeUILight.woff') format('woff'),
+  url('../fonts/SegoeUILight/SegoeUILight.ttf') format('truetype'),
+  url('../fonts/SegoeUILight/SegoeUILight.eot?#iefix') format('embedded-opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot'),
+  url('../fonts/SegoeUIRegular/SegoeUIRegular.woff') format('woff'),
+  url('../fonts/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype'),
+  url('../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUISemiBold/SegoeUISemiBold.eot'),
+  url('../fonts/SegoeUISemiBold/SegoeUISemiBold.woff') format('woff'),
+  url('../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf') format('truetype'),
+  url('../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'calibri';
+  src: url('../fonts/calibri/calibri.eot'),
+  url('../fonts/calibri/calibri.woff') format('woff'),
+  url('../fonts/calibri/calibri.ttf') format('truetype'),
+  url('../fonts/calibri/calibri.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'SegoeUI';
+  // font-family: 'Prosto One', cursive;
+  background-color: #fff;
+}
+
+.title__headline{
+  position: relative;
+  @media (max-width: $screen-sm-max) {
+    text-align: center;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    border-bottom: 2px #CECFD3 solid;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    bottom: 10px;
+    width: 100%;
+  }
+  h3{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    font-weight: bold;
+    color: #323232;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    @media (max-width: $screen-sm-max) {
+      padding-left: 15px;
+    }
+  }
+}
+
+h4{
+  font-size: 20px;
+  color: #323232;
+  font-weight: 400;
+  margin: 0;
+  @media (max-width: $screen-sm-max) {
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
+p{
+  font-size: 16px;
+  color: #323232;
+  font-weight: 400;
+  margin: 0;
+  @media (max-width: $screen-sm-max) {
+    padding-top: 15px;
+  }
+}
+
+.top_nav {
+  padding-left: 0;
+  margin: 0;
+  position: relative;
+  border-bottom: 2px #d3d4d8 solid;
+  padding-bottom: 10px;
+  li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    &:before {
+      content: '\f101';
+      font-family: 'FontAwesome';
+      position: absolute;
+      right: 1px;
+    }
+    &:last-child {
+      padding-right: 0;
+      cursor: no-drop;
+      color: #ccc;
+      &:before {
+        content: '';
+      }
+    }
+    a {
+      font-size: 16px;
+      font-weight: 400;
+      color: #000;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:hover {
+        color: #53777a;
+      }
+    }
+  }
+}
+
+.mm-title{
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.mm-right.mm-opening .mm-menu.mm-fx-menu-slide {
+  z-index: 999999;
+}
+
+@-webkit-keyframes inM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes inM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes outM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes outM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes inT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@keyframes inT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes outT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@keyframes outT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes inBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@keyframes inBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes outBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@keyframes outBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-9px) rotate(135deg);
+  }
+}
+

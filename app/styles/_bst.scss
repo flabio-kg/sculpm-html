@@ -1,0 +1,27 @@
+.content {
+  padding-bottom: 30px;
+
+  img {
+    padding-top: 20px;
+    margin: auto;
+    max-width: 100%;
+    @media (max-width: $screen-sm-min) {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: $screen-xs-max) {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+p {
+  font-size: 16px;
+  font-family: 'SegoeUI';
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+  }
+}
