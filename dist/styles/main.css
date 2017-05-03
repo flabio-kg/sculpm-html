@@ -11796,6 +11796,10 @@ p {
   }
 }
 
+.main__content p {
+  margin-bottom: 10px;
+}
+
 .main__content .btnwrap {
   text-align: right;
 }
