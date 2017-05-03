@@ -1,6 +1,56 @@
 .content {
   padding-bottom: 30px;
+
   .main__content {
+    .top_nav {
+      padding-left: 0;
+      margin: 0;
+      position: relative;
+      border-bottom: 2px #d3d4d8 solid;
+      padding-bottom: 10px;
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 15px;
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        margin: 0;
+
+        &:before {
+          content: '\f101';
+          font-family: 'FontAwesome';
+          position: absolute;
+          right: 1px;
+          color: #000;
+        }
+
+        &:last-child {
+          padding-right: 0;
+          cursor: no-drop;
+          color: #ccc;
+
+          &:before {
+            content: '';
+          }
+        }
+
+        a {
+          font-size: 16px;
+          font-weight: 400;
+          color: #000;
+          text-decoration: none;
+          transition: all 0.3s;
+
+          &:hover {
+            color: #53777a;
+          }
+        }
+      }
+    }
+
     img {
       max-width: 100%;
       @media (max-width: $screen-sm-max) {
@@ -14,16 +64,19 @@
         display: block;
       }
     }
+
     h3 {
       @media (max-width: $screen-sm-max) {
         padding-left: 15px;
       }
     }
-    p{
+
+    p {
       @media (max-width: $screen-xs-max) {
         padding: 0;
       }
     }
+
     h6 {
       font-size: 18px;
       color: #323232;
@@ -32,16 +85,19 @@
         text-align: center;
       }
     }
-    .title__headline{
+
+    .title__headline {
       @media (max-width: $screen-xs-max) {
         margin: 0 !important;
       }
     }
-    .check {
+
+    ul {
       margin: 0;
+
       li {
         list-style-type: none;
-        margin-top: 30px;
+        margin-top: 10px;
         @media (max-width: $screen-md-max) {
           &:first-child {
             margin-top: 240px;
@@ -60,6 +116,7 @@
         @media (max-width: $screen-xs-max) {
           margin-top: 15px;
         }
+
         &:before {
           position: absolute;
           content: '';
@@ -69,5 +126,30 @@
         }
       }
     }
+  }
+
+  &__widget {
+    padding-top: 30px;
+
+  .content__side{
+    margin: 0;
+  }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        a {
+          &:hover {
+            background-color: #56C7C3;
+          }
+        }
+      }
+    }
+  }
+
+  span {
+    float: right;
   }
 }
