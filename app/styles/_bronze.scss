@@ -2,21 +2,24 @@
   .btnwrap {
     text-align: right;
   }
-
   .-btn {
     margin-top: 20px;
     margin-bottom: 20px;
+    display: inline-block;
     color: #fff;
     border: none;
     background-color: #00b7eb;
     width: 150px;
     height: 40px;
+    line-height: 35px;
     outline: none;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     border: 2px transparent solid;
-    transition: all 0.3s;
+    text-decoration: none;
+    transition: all .3s;
+    text-align: center;
     @media (max-width: $screen-sm-max) {
       float: none;
       display: block;

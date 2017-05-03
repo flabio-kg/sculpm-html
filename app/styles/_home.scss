@@ -48,6 +48,7 @@
   &__side{
     border: 1px solid #d3d4d8;
     min-height: 400px;
+    margin-bottom: 30px;
   }
   &__navi{
     padding: 10px;
@@ -90,6 +91,7 @@
         margin-top: 15px;
       }
       .-hide{
+        margin-bottom: 30px;
         @media (max-width: $screen-sm-max) {
           display: none;
         }
