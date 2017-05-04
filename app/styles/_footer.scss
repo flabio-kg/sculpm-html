@@ -1,6 +1,6 @@
 .footer {
   background-color: rgb(44, 62, 80);
-  min-height: 178px;
+  height: 178px;
 
   &__item {
     padding-top: 20px;
@@ -99,24 +99,6 @@
     position: relative;
     padding-top: 10px;
     text-align: center;
-
-    p {
-      font-size: 20px;
-      color: #fff;
-      @media (max-width: $screen-xs-max) {
-        font-size: 16px;
-      }
-
-      i {
-        position: absolute;
-        left: 60px;
-        top: 15px;
-        color: #00b7eb;
-        @media (max-width: $screen-sm-max) {
-          display: none;
-        }
-      }
-    }
 
     ul {
       margin: 0;
