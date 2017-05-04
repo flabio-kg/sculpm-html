@@ -1,23 +1,26 @@
-.error{
-	&__blog{
+.error {
+	&__blog {
 		text-align: center;
 		padding-top: 50px;
 		padding-bottom: 50px;
-		h6{
+
+		h6 {
 			font-size: 230px;
 			color: #56c7c3;
 			font-family: 'calibri';
 			font-weight: bold;
 			margin: 0;
 			display: block;
-			span{
+
+			span {
 				color: #00b7eb;
 			}
 			@media (max-width: $screen-xs-max) {
 				font-size: 130px;
 			}
 		}
-		h4{
+
+		h4 {
 			font-size: 43px;
 			color: #000;
 			font-family: 'calibri';
@@ -29,14 +32,16 @@
 				font-size: 25px;
 			}
 		}
-		a{
+
+		a {
 			font-size: 20px;
 			color: #000;
 			font-weight: 400;
 			text-decoration: underline;
 			text-transform: uppercase;
-			transition: all .3s;
-			&:hover{
+			transition: all 0.3s;
+
+			&:hover {
 				text-decoration: none;
 			}
 			@media (max-width: $screen-xs-max) {

@@ -1,6 +1,6 @@
 .content{
   img {
-    max-width: 100%;
+    // max-width: 100%;
   }
   &__top {
     margin-top: 10px;
@@ -192,7 +192,7 @@
     }
     &--maincontent {
       img {
-        max-width: 100%;
+        // max-width: 100%;
         @media (max-width: $screen-xs-max) {
           float: none !important;
           display: block;
