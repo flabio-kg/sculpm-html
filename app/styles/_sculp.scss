@@ -50,22 +50,13 @@
           }
         }
       }
+
+      &__imgwrap {
+        width: 100%;
+      }
     }
 
-    img {
-      @media (max-width: $screen-sm-max) {
-        max-width: 100%;
-        float: none !important;
-        margin: 0 auto !important;
-        display: block;
-      }
-      @media (max-width: $screen-md-max) {
-        max-width: 100%;
-        float: none !important;
-        margin: 0 auto !important;
-        display: block;
-      }
-    }
+
 
     h3 {
       @media (max-width: $screen-sm-max) {
@@ -126,6 +117,19 @@
           color: #08b9ec;
           margin-left: -30px;
         }
+      }
+    }
+    img {
+      max-width:  100%;
+      @media (max-width: $screen-sm-max) {
+        float: none !important;
+        margin: 0 auto !important;
+        display: block;
+      }
+      @media (max-width: $screen-md-max) {
+        float: none !important;
+        margin: 0 auto !important;
+        display: block;
       }
     }
   }
