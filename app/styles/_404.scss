@@ -1,4 +1,16 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
 .error {
+	flex: 1 0 auto;
+
 	&__blog {
 		text-align: center;
 		padding-top: 50px;

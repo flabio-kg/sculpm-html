@@ -1,34 +1,41 @@
-.-padding{
+.-padding {
 	margin-top: 20px;
 }
-.content{
+
+.content {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	&__map{
+	flex: 1 0 auto;
+
+	&__map {
 		position: relative;
 		width: 100%;
 		min-height: 330px;
-		#map{
+
+		#map {
 			position: absolute;
 			top: 50px;
-			right: 0px;
-			left: 0px;
-			bottom: 0px;
+			right: 0;
+			left: 0;
+			bottom: 0;
 		}
 	}
-	&__address{
+
+	&__address {
 		padding-top: 23px;
 		padding-bottom: 13px;
 		border-bottom: 2px #CECFD3 solid;
 	}
-	&__link{
-		.ul{
+
+	&__link {
+		.ul {
 			padding-left: 0;
 			@media (max-width: $screen-sm-max) {
 				text-align: center;
 			}
 		}
-		ul{
+
+		ul {
 			padding-left: 50px;
 			@media (max-width: $screen-md-max) {
 				padding-left: 0;
@@ -37,15 +44,18 @@
 				text-align: center;
 				padding-left: 0;
 			}
-			li{
+
+			li {
 				display: block;
 				list-style-type: none;
 				font-size: 20px;
 				color: #00b7eb;
-				i{
+
+				i {
 					padding-right: 15px;
 				}
-				a{
+
+				a {
 					font-size: 18px;
 					color: #323232;
 					text-decoration: none;
@@ -53,37 +63,44 @@
 			}
 		}
 	}
-	&__forms{
+
+	&__forms {
 		padding-top: 40px;
 		padding-bottom: 25px;
 		border-bottom: 2px #CECFD3 solid;
 		text-align: center;
-		.form{
-			input,textarea{
+
+		.form {
+			input,
+			textarea {
 				border: 1px #CECFD3 solid;
 				padding-left: 10px;
 				outline: none;
 				font-size: 14px;
 				color: #000;
 				font-weight: 400;
-				&:focus{
-					box-shadow: 0px 0px 15px #53C1BC;
-					transition: all .9s;
+
+				&:focus {
+					box-shadow: 0 0 15px #53C1BC;
+					transition: all 0.9s;
 				}
 			}
-			input{
+
+			input {
 				max-width: 100%;
 				width: 100%;
 				height: 35px;
 				line-height: 35px;
 				margin-bottom: 20px;
 			}
-			textarea{
+
+			textarea {
 				max-width: 100%;
 				width: 100%;
 				padding-top: 10px;
 			}
-			.btn{
+
+			.btn {
 				padding: 10px 20px;
 				margin-top: 15px;
 				font-size: 16px;
@@ -93,7 +110,8 @@
 				background-color: #53C1BC;
 				border-radius: 0;
 				outline: none;
-				i{
+
+				i {
 					padding-right: 10px;
 				}
 			}
