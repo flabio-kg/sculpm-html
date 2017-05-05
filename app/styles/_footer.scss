@@ -1,6 +1,5 @@
 .footer {
   background-color: rgb(44, 62, 80);
-  height: 178px;
   flex: 0 0 auto;
 
   &__item {
@@ -132,11 +131,14 @@
 
         i {
           position: absolute;
-          left: 60px;
+          left: 65px;
           top: 15px;
           color: #00b7eb;
           @media (max-width: $screen-sm-max) {
             display: none;
+          }
+          @media (max-width: $screen-md-max) {
+            left: 40px;
           }
         }
 
@@ -147,6 +149,9 @@
         .fa-envelope-o {
           font-size: 20px;
           left: 25px;
+          @media (max-width: $screen-md-max) {
+            left: 5px;
+          }
         }
       }
     }

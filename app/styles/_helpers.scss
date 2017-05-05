@@ -34,25 +34,35 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer__items{
 
-  p{
+.footer__items {
+  p {
     position: relative;
     text-align: left;
     padding-left: 25px;
     color: #fff;
     font-size: 20px;
     font-family: 'SegoeUI';
-    .fa-map-marker{
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+      padding-bottom: 10px;
+      padding-left: 0;
+      padding-top: 0;
+    }
+
+    .fa-map-marker {
       color: #00b7eb;
       position: absolute;
       left: 0;
       top: 7px;
+      @media (max-width: $screen-sm-max) {
+        display: none;
+      }
     }
   }
 }
+
 .header__logo {
-  
   // a {
   //   padding-top: 10px;
   // }
@@ -78,9 +88,6 @@ html {
 
 .title__headline {
   position: relative;
-  @media (max-width: $screen-sm-max) {
-    text-align: center;
-  }
 
   &:before {
     content: '';
@@ -92,6 +99,9 @@ html {
     top: 0;
     bottom: 10px;
     width: 100%;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
   }
 
   h3 {
@@ -104,9 +114,6 @@ html {
     position: relative;
     display: inline-block;
     padding-right: 15px;
-    @media (max-width: $screen-sm-max) {
-      padding-left: 15px;
-    }
   }
 }
 
@@ -114,7 +121,6 @@ h4 {
   font-size: 20px;
   color: #323232;
   font-weight: 400;
-  margin: 0;
   @media (max-width: $screen-sm-max) {
     text-align: center;
     padding-top: 15px;
